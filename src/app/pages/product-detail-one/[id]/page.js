@@ -1,15 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
-import Tagline from "../components/tagline";
-import Navbar from "../components/navbar";
-import ProductDetail from "../components/product-detail";
-import ProductAboutTab from "../components/product-about-tab";
-import ArrivalItem from "../components/arrival-item";
-import Footer from "../components/footer";
-import Switcher from "../components/switcher";
-import ProductViewOne from "../components/product-view-one";
-import ScrollToTop from "../components/scroll-to-top";
+import Tagline from "../../../components/tagline";
+import Navbar from "../../../components/navbar";
+import ProductDetail from "../../../components/product-detail";
+import ProductAboutTab from "../../../components/product-about-tab";
+import ArrivalItem from "../../../components/arrival-item";
+import Footer from "../../../components/footer";
+import Switcher from "../../../components/switcher";
+import ProductViewOne from "../../../components/product-view-one";
+import ScrollToTop from "../../../components/scroll-to-top";
 
 export default function ProductDetailOne(){
     return(

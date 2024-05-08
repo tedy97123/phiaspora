@@ -5,14 +5,12 @@ import Image from "next/image";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Switcher from "../../components/switcher";
-import ScrollToTop from "@/app/components/scroll-to-top";
+import ScrollToTop from "../../components/scroll-to-top";
 
 import { blogData, social } from "../../data/data";
 import {FiCalendar, FiClock} from '../../assets/icons/vander'
 
-export default function BlogDetail({params}){
-    let id = params.id
-    let data = blogData.find((blog) => blog.id === parseInt(id))
+export default function BlogDetail(){
     return(
         <>
         <Navbar navClass="defaultscroll is-sticky" navlight={true}/>
@@ -20,11 +18,11 @@ export default function BlogDetail({params}){
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
             <div className="container relative">
                 <div className="grid grid-cols-1 pb-8 text-center mt-10">
-                    <h3 className="text-4xl leading-normal tracking-wider font-semibold text-white">{data?.title}</h3>
+                    <h3 className="text-4xl leading-normal tracking-wider font-semibold text-white">Tips For Wearing Loose T-shirts</h3>
 
                     <ul className="list-none mt-6">
                         <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Author :</span> <span className="block">Phiaspora</span></li>
-                        <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Date :</span> <span className="block">{data?.date}</span></li>
+                        <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Date :</span> <span className="block">19th June, 2024</span></li>
                         <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Time :</span> <span className="block">8 Min Read</span></li>
                     </ul>
                 </div>
@@ -45,7 +43,7 @@ export default function BlogDetail({params}){
                     <div className="lg:col-span-8 md:col-span-6">
                         <div className="relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
 
-                            <Image src={data?.image} width={0} height={0} sizes="100vw" style={{width:'100%',height:'auto'}} alt=""/>
+                            <Image src='/images/blog/9.jpg' width={0} height={0} sizes="100vw" style={{width:'100%',height:'auto'}} alt=""/>
 
                             <div className="p-6">
                                 <p className="text-slate-400">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script.</p>
