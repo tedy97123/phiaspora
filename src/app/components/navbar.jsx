@@ -374,7 +374,7 @@ export default function Navbar({navClass, navlight}){
                             </li>
                         
                                 <li className={`has-submenu parent-menu-item ms-0 ${['/blogs','/blog-detail','/blog-item', '/pages'].includes(manu) ? 'active' : '' }`}>
-                                    <Link href="pages/blogs" onClick={() => setSubManu(subManu === '/blog-item' ? '' : '/blog-item')}>
+                                    <Link href="#" onClick={() => setSubManu(subManu === '/blog-item' ? '' : '/blog-item')}>
                                         Blog
                                     </Link>
                                     <span className="submenu-arrow"></span>
