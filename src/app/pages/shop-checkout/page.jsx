@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-
-import Navbar from "../components/navbar";
-import MobileApp from "../components/mobile-app";
-import Footer from "../components/footer";
-import Switcher from "../components/switcher";
-import ScrollToTop from "../components/scroll-to-top";
+ 
+import Navbar from "@/app/components/navbar";
+import MobileApp from "@/app/components/mobile-app";
+import Footer from "@/app/components/footer";
+import Switcher from "@/app/components/switcher";
+import ScrollToTop from "@/app/components/scroll-to-top";
 
 export default function ShopCheckout(){
     return(

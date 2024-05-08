@@ -2,15 +2,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Switcher from "../components/switcher";
-import Filter from "../components/filter";
-import ScrollToTop from "../components/scroll-to-top";
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import Switcher from "@/app/components/switcher";
+import Filter from "@/app/components/filter";
+import ScrollToTop from "@/app/components/scroll-to-top";
 
-import {FiHeart, FiEye, FiBookmark, FiChevronLeft, FiChevronRight} from '../assets/icons/vander'
-import { newProduct } from "../data/data";
-
+import {FiHeart, FiEye, FiBookmark, FiChevronLeft, FiChevronRight} from "react-icons/fi";
+import { newProduct } from "@/app/data/data";
 export default function ListLeftSidebar(){
     return(
         <>

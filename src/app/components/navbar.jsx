@@ -373,20 +373,20 @@ export default function Navbar({navClass, navlight}){
                                 </ul> 
                             </li>
                         
-                                <li className={`has-submenu parent-menu-item ms-0 ${['/blogs','/blog-detail','/blog-item', '/pages'].includes(manu) ? 'active' : '' }`}>
-                                    <Link href="#" onClick={() => setSubManu(subManu === '/blog-item' ? '' : '/blog-item')}>
-                                        Blog
-                                    </Link>
-                                    <span className="submenu-arrow"></span>
-                                    <ul className={`submenu ${['/blogs','/blog-detail','/blog-item', '/pages'].includes(subManu) ? 'open' : '' }`}>
-                                        <li className={`ms-0 ${manu === '/blogs' ? 'active' : ''}`}>
-                                            <Link href="pages/blogs" className="sub-menu-item">Blogs</Link>
-                                        </li>
-                                        <li className={`ms-0 ${manu === '/blog-detail' ? 'active' : ''}`}>
-                                            <Link href="pages/blog-detail" className="sub-menu-item">Blog Detail</Link>
-                                        </li>
-                                    </ul> 
-                                </li>
+                            <li className={`has-submenu parent-menu-item ms-0 ${['/blogs','/blog-detail','/blog-item', '/pages'].includes(manu) ? 'active' : '' }`}>
+                                <Link to="#" onClick={() => setSubManu(subManu === '/blog-item' ? '' : '/blog-item')}>
+                                    Blog
+                                </Link>
+                                <span className="submenu-arrow"></span>
+                                <ul className={`submenu ${['/blogs','/blog-detail','/blog-item', '/pages'].includes(subManu) ? 'open' : '' }`}>
+                                    <li className={`ms-0 ${manu === '/blogs' ? 'active' : ''}`}>
+                                        <Link to="/blogs" className="sub-menu-item">Blogs</Link>  
+                                    </li>
+                                    <li className={`ms-0 ${manu === '/blog-detail' ? 'active' : ''}`}>
+                                        <Link to="/blog-detail" className="sub-menu-item">Blog Detail</Link>  
+                                    </li>
+                                </ul> 
+                            </li>
 
 
 

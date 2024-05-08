@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Switcher from "../components/switcher";
-import ScrollToTop from "../components/scroll-to-top";
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import Switcher from "@/app/components/switcher";
+import ScrollToTop from "@/app/components/scroll-to-top";
 
-import { brand } from "../data/data";
-
+import { brand } from "@/app/data/data";
 
 export default function Brands(){
     return(

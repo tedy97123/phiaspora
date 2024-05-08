@@ -1,15 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+ 
 
-import Navbar from "../components/navbar";
-import MobileApp from "../components/mobile-app";
-import Footer from "../components/footer";
-import Switcher from "../components/switcher";
-import Counter from "../components/counter";
+import Navbar from "@/app/components/navbar";
+import MobileApp from "@/app/components/mobile-app";
+import Footer from "@/app/components/footer";
+import Switcher from "@/app/components/switcher";
+import Counter from "@/app/components/counter";
+import ScrollToTop from "@/app/components/scroll-to-top";
 
-import { cartData } from "../data/data";
-import ScrollToTop from "../components/scroll-to-top";
+import { cartData } from "@/app/data/data";
 
 export default function ShopCart(){
     return(
