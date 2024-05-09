@@ -373,7 +373,7 @@ export default function Navbar({navClass, navlight}){
                                 </ul> 
                             </li>
                         
-                            <li className={`has-submenu parent-menu-item ms-0 ${['/blogs','/blog-detail','/blog-item', '/pages'].includes(manu) ? 'active' : '' }`}>
+                            {/* <li className={`has-submenu parent-menu-item ms-0 ${['/blogs','/blog-detail','/blog-item', '/pages'].includes(manu) ? 'active' : '' }`}>
                                 <Link to="#" onClick={() => setSubManu(subManu === '/blog-item' ? '' : '/blog-item')}>
                                     Blog
                                 </Link>
@@ -386,7 +386,7 @@ export default function Navbar({navClass, navlight}){
                                         <Link to="/blog-detail" className="sub-menu-item">Blog Detail</Link>  
                                     </li>
                                 </ul> 
-                            </li>
+                            </li> */}
 
 
 

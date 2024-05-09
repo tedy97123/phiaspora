@@ -1,15 +1,17 @@
 import React from "react";
 import Link from "next/link";
-
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Switcher from "../components/switcher";
-import ScrollToTop from "../components/scroll-to-top";
-
-import { FiDribbble, FiLinkedin, FiFacebook, FiInstagram, FiTwitter,} from "../assets/icons/vander"
-import { promiseData, teamData } from "../data/data";
-import About from "../components/about";
 import Image from "next/image";
+
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import Switcher from "@/app/components/switcher";
+import ScrollToTop from "@/app/components/scroll-to-top";
+
+
+import { FiDribbble, FiLinkedin, FiFacebook, FiInstagram, FiTwitter,} from "react-icons/fi";
+import { promiseData, teamData } from  "@/app/data/data";
+
+import About from "@/app/components/about"; 
 
 export default function AboutUs(){
     return(
