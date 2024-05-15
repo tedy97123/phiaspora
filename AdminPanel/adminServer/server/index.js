@@ -7,13 +7,12 @@ import morgan from "morgan";
 import kpiRoutes from "./routes/kpi.js";
 import productRoutes from "./routes/product.js";
 import transactionRoutes from "./routes/transaction.js";
+import userRoutes from './routes/profile.js'
 import descriptionRoutes from "./routes/description.js"
 import KPI from "./models/KPI.js";
 import Product from "./models/Product.js";
 import Transaction from "./models/Transaction.js";
 import { kpis, products, transactions } from "./data/data.js";
-import { Db } from "mongodb";
-
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -38,7 +37,9 @@ app.use("/kpi", kpiRoutes);
 app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
 app.use("/description", descriptionRoutes);
+app.use("/user", userRoutes);
 
+// app.use("/users",userRoutes)
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 8000;
 const MONGO_URL = "mongodb+srv://tedyyohanes97:Peeman200@cluster1.vs1vunz.mongodb.net/Dashboard?retryWrites=true&w=majority";
@@ -52,6 +53,8 @@ app.post('/insert_kpis', async function (req, res) {
     KPI.insertMany(kpis);
     res.send("kpis inserted!") 
 })
+
+
 
 app.post('/insert_products', async function (req, res) {   
    Product.insertMany(products);
