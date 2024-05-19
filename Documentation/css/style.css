@@ -758,7 +758,7 @@ footer {
 }
 
 .sidenav .navbar-custom {
-  margin-top: 0px;
+  margin-top: 10px;
   color: #3c4858 !important;
 }
 
@@ -809,8 +809,8 @@ footer {
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
-  background-color: transparent;
-  border-color: #506efa;
+  background-color: solid;
+  border-color: #921359;
 }
 
 .navbar-custom .navbar-toggles {
@@ -849,7 +849,7 @@ footer {
 }
 
 .nav-sticky.navbar-custom.sticky-light {
-  background-color: #3c4858;
+  background-color: #000000;
 }
 
 .nav-sticky.navbar-custom .navbar-toggles {
@@ -901,8 +901,8 @@ footer {
     z-index: 99;
     margin-top: 0px;
     padding: 10px 0px !important;
-    -webkit-box-shadow: 0 0 3px rgba(22, 28, 45, 0.15);
-            box-shadow: 0 0 3px rgba(22, 28, 45, 0.15);
+    -webkit-box-shadow: 0 0 5px rgba(22, 28, 45, 0.15);
+            box-shadow: 0 0 5px rgba(22, 28, 45, 0.15);
   }
 }
 
