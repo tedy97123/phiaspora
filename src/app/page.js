@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image"
@@ -7,12 +9,15 @@ import Tagline from "./components/tagline";
 import CtaOne from "./components/cta-one";
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
-
+import { useState } from "react";
 import ScrollToTop from "./components/scroll-to-top";
 import {collections, newProduct} from './data/data'
 import {FiHeart, FiEye, FiBookmark} from './assets/icons/vander'
+import { useGetProductsQuery } from "./api/Strapi";
+
 
 export default function Home() {
+    
   return (
     <>
     <Tagline/>
